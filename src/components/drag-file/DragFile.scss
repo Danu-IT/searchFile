@@ -1,0 +1,89 @@
+.dropFile {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 2px dashed var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--input-bg);
+}
+
+.dropFile input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.dropFile:hover,
+.dropFile.dragover {
+  opacity: 0.6;
+}
+
+.dropFileLabel {
+  text-align: center;
+  color: var(--txt-second-color);
+  font-weight: 600;
+  padding: 10px;
+  position: relative;
+}
+
+.dropFile img {
+  width: 100px;
+}
+
+.dropFilePrev {
+  margin-top: 30px;
+}
+.dropFilePrev p {
+  font-weight: 500;
+}
+
+.dropFilePrevTitle {
+  margin-bottom: 20px;
+}
+.dropFileItem {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  background-color: var(--input-bg);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.dropFileItem img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.dropFileItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dropFileItemDelete {
+  background-color: var(--box-bg);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: var(--box-shadow);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.dropFileItem:hover .dropFileItemDelete {
+  opacity: 1;
+}
