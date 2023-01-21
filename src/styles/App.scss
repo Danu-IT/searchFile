@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #f5f8ff;
+  --box-bg: #fff;
+  --input-bg: #f5f8ff;
+  --txt-color: #2f2d2f;
+  --txt-second-color: #ccc;
+  --border-color: #4267b2;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  height: 100vh;
+}
+
+.box {
+  background-color: var(--box-bg);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+  color: red;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: var(--border-color);
+  color: var(--input-bg);
+  border: 1px solid var(--input-bg);
+}
+
+.hintBox {
+  position: absolute;
+  top: 20px;
+  right: 500px;
+  color: red;
+}
